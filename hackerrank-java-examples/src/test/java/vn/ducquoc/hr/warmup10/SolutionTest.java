@@ -44,6 +44,7 @@ public class SolutionTest {
 
   @Test(timeout=60000)
   public void test00() throws Exception {
+
     String actual = getOutputResultFromMainRunStdin("warmup10/input00.txt");
     String expected = new BufferedReader(new InputStreamReader(readResource("warmup10/output00.txt"))).readLine();
     Assert.assertEquals(expected.trim(), actual.trim());
@@ -51,6 +52,7 @@ public class SolutionTest {
 
   @Test(timeout=60000)
   public void test01() throws Exception {
+
     String actual = getOutputResultFromMainRunStdin("warmup10/input01.txt");
     String expected = new BufferedReader(new InputStreamReader(readResource("warmup10/output01.txt"))).readLine();
     Assert.assertEquals(expected.trim(), actual.trim());
@@ -58,6 +60,7 @@ public class SolutionTest {
 
   @Test(timeout=60000)
   public void test02() throws Exception {
+
     String actual = getOutputResultFromMainRunStdin("warmup10/input02.txt");
     String expected = new BufferedReader(new InputStreamReader(readResource("warmup10/output02.txt"))).readLine();
     Assert.assertEquals(expected.trim(), actual.trim());
@@ -65,6 +68,7 @@ public class SolutionTest {
 
   @Test(timeout=60000)
   public void test03() throws Exception {
+
     String actual = getOutputResultFromMainRunStdin("warmup10/input03.txt");
     String expected = new BufferedReader(new InputStreamReader(readResource("warmup10/output03.txt"))).readLine();
     Assert.assertEquals(expected.trim(), actual.trim());
@@ -72,6 +76,7 @@ public class SolutionTest {
 
   @Test(timeout=60000)
   public void test04() throws Exception {
+
     String actual = getOutputResultFromMainRunStdin("warmup10/input04.txt");
     String expected = new BufferedReader(new InputStreamReader(readResource("warmup10/output04.txt"))).readLine();
     Assert.assertEquals(expected.trim(), actual.trim());
@@ -79,6 +84,7 @@ public class SolutionTest {
 
   @Test(timeout=60000)
   public void test05() throws Exception {
+
     String actual = getOutputResultFromMainRunStdin("warmup10/input05.txt");
     String expected = new BufferedReader(new InputStreamReader(readResource("warmup10/output05.txt"))).readLine();
     Assert.assertEquals(expected.trim(), actual.trim());

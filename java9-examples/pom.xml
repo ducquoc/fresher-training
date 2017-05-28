@@ -5,7 +5,7 @@
   <artifactId>java9-examples</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>hackerrank-java-examples</name>
+  <name>java9-examples</name>
   <url>https://github.com/ducquoc/fresher-training</url>
   <dependencies>
     <dependency>
