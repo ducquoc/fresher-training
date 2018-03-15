@@ -19,12 +19,10 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.6.1</version><!-- at least 3.5.1 -->
         <configuration>
-          <version>3.6.1</version><!-- at least 3.5.1 -->
-          <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
-          </configuration>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
     </plugins>
