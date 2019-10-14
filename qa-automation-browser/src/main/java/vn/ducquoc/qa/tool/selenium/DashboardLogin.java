@@ -7,6 +7,8 @@ import vn.ducquoc.qa.tool.AutomationBrowser;
  * Homepage -> Login ( nmt.cancer@yopmail.com/tnm@1234 ) https://beecat.myshopify.com
  * <br></br>
  * This test case will set text and login only.
+ * <br></br>
+ * Driver Chrome: https://chromedriver.chromium.org/downloads
  */
 public class DashboardLogin {
 
