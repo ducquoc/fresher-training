@@ -9,10 +9,21 @@
   <url>https://github.com/ducquoc/fresher-training</url>
   <dependencies>
     <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-server</artifactId>
+      <version>3.4.0</version>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.7</version>
-      <scope>test</scope>
+      <!--<scope>test</scope>-->
+      <scope>compile</scope>
     </dependency>
   </dependencies>
   <build>
