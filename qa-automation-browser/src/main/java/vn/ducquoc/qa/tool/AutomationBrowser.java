@@ -6,6 +6,8 @@ import vn.ducquoc.jutil.BrowserUtil;
  * Not necessary to use Selenium, Cucumber, Watir, etc...
  * <br></br>
  * This test case will open browser with some randomness.
+ *
+ * @see //is.gd/automation_selenium_commit_png
  */
 public class AutomationBrowser {
 
