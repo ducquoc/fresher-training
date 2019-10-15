@@ -40,7 +40,7 @@ public class DashboardLogin {
         //Browser's webdriver *requires* you to specify its location.
 //        System.setProperty("webdriver.chrome.driver", "/Users/ducquoc/github/fresher-training/"
 //                + "qa-automation-browser/src/main/resources/mac64/chromedriver_2.44_69-71"); //driver Chrome 69-71
-        String executableDriverName = "chromedriver_2.44_69-71";
+        String executableDriverName = "chromedriver"; //chromedriver_2.40_66-68
         System.setProperty("webdriver.chrome.driver", TRAINING_REPO_PATH
                 + MIDDLE_PROJ_RESOURCES_PATH + executableDriverName); //driver Chrome 69-71
         browser = new org.openqa.selenium.chrome.ChromeDriver(); //http://chromedriver.storage.googleapis.com/index.html

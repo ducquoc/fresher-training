@@ -4,10 +4,8 @@ package vn.ducquoc.qa.tool.selenium;
 import vn.ducquoc.qa.tool.AutomationBrowser;
 
 /**
- * TNM classification of cancer. T (not danger) might be mis-understood as N (danger).
- * <br></br>
- * This test case will try to logout 3 different accounts (after login).
- * <br></br>
+ * TNM classification of cancer. <b>T (not danger) might be mis-understood as N (danger).</b><br></br>
+ * This test case will try to logout 3 different accounts (after login).<br></br>
  * Driver Chrome: https://chromedriver.chromium.org/downloads https://chromedriver.storage.googleapis.com/index.html
  */
 public class NmtLogout {
@@ -40,7 +38,7 @@ public class NmtLogout {
         //Browser's webdriver *requires* you to specify its location.
 //        System.setProperty("webdriver.chrome.driver", "/Users/ducquoc/github/fresher-training/"
 //                + "qa-automation-browser/src/main/resources/mac64/chromedriver_2.44_69-71"); //driver Chrome 69-71
-        String executableDriverName = "chromedriver_2.44_69-71";
+        String executableDriverName = "chromedriver"; //chromedriver_2.40_66-68
         System.setProperty("webdriver.chrome.driver", TRAINING_REPO_PATH
                 + MIDDLE_PROJ_RESOURCES_PATH + executableDriverName); //driver Chrome 69-71
         browser = new org.openqa.selenium.chrome.ChromeDriver(); //http://chromedriver.storage.googleapis.com/index.html
