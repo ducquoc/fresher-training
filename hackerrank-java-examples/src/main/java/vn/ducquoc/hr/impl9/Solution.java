@@ -20,10 +20,52 @@ public class Solution {
   }
 
   public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
+//    Scanner in = new Scanner(System.in);
+    DScanner in = new DScanner(System.in);
     int year = in.nextInt();
     String result = solve(year);
     System.out.println(result);
   }
 
+  public static class DScanner { // DScanner - quicker Scanner
+    java.io.BufferedReader br;
+    java.util.StringTokenizer st;
+
+    public DScanner() {
+      br = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+    }
+
+    public DScanner(java.io.InputStream is) { // file/resource
+      br = new java.io.BufferedReader(new java.io.InputStreamReader(
+              new java.io.DataInputStream(is)));
+    }
+
+    public String next() { // no nextLine() : prefer br.readLine()
+      while (st == null || !st.hasMoreElements()) {
+        try {
+          st = new java.util.StringTokenizer(br.readLine());
+        } catch (java.io.IOException e) {
+          e.printStackTrace();
+        }
+      }
+      return st.nextToken();
+    }
+
+    int nextInt() {
+      return Integer.valueOf(next());
+    }
+
+    public void close() {
+      if (br != null) {
+        try {
+          br.close();
+        } catch (java.io.IOException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+
+    //long nextLong() { return Long.valueOf(next()); }
+    //double nextDouble() { return Double.valueOf(next()); }
+  }
 }
