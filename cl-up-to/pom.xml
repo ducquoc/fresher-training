@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>vn.ducquoc.upto</groupId>
+  <artifactId>cl</artifactId>
+  <packaging>jar</packaging>
+  <version>1.1-SNAPSHOT</version>
+  <name>cl-up-to</name>
+  <url>https://github.com/ducquoc/fresher-training/tree/master/cl-up-to</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <repositories>
+    <repository>
+      <id>legacy-releases-temp-repository</id>
+      <url>https://github.com/ducquoc/legacy_m2_repo/raw/master/release/</url>
+      <!--<url>https://raw.github.com/ducquoc/legacy_m2_repo/master/release/</url>-->
+      <snapshots><enabled>false</enabled></snapshots>
+    </repository>
+  </repositories>
+  <!-- mvn net.ducquoc:linecount-maven-plugin:linecount -->
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.6.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>net.ducquoc</groupId>
+        <artifactId>linecount-maven-plugin</artifactId>
+        <version>1.4.8</version>
+        <configuration>
+          <!--<display>true</display>-->
+          <!--<outcome>true</outcome>-->
+          <!--<presentNonCode>true</presentNonCode>-->
+          <trimPkgNames>false</trimPkgNames>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <!--<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
+              <!--<addDefaultImplementationEntries>true</addDefaultImplementationEntries>-->
+              <mainClass>vn.ducquoc.upto.cl.ClUpTo</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
