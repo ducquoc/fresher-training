@@ -15,6 +15,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>legacy-releases-temp-repository</id>
+      <url>https://github.com/ducquoc/legacy_m2_repo/raw/master/release/</url>
+      <!--<url>https://raw.github.com/ducquoc/legacy_m2_repo/master/release/</url>-->
+      <snapshots><enabled>false</enabled></snapshots>
+    </repository>
+  </repositories>
+  <!-- mvn net.ducquoc:linecount-maven-plugin:linecount -->
   <build>
     <plugins>
       <plugin>
@@ -23,6 +32,17 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>net.ducquoc</groupId>
+        <artifactId>linecount-maven-plugin</artifactId>
+        <version>1.4.8</version>
+        <configuration>
+          <!--<display>true</display>-->
+          <!--<outcome>true</outcome>-->
+          <!--<presentNonCode>true</presentNonCode>-->
+          <trimPkgNames>false</trimPkgNames>
         </configuration>
       </plugin>
     </plugins>
