@@ -20,18 +20,23 @@ mvn package install -Dmaven.test.skip
 ```sh
 $ mvn compile exec:java -Dexec.mainClass=vn.ducquoc.upto.cl.ClUpTo
 ```
+or
+```sh
+$ mvn package && java -jar target/cl*.jar
+```
 
 ### Docker
 
 ```bash
 #alias docker=podman
 $ docker build -t ducquoc/cl-up-to:1.1 .
-$ docker run -d -p 9980:80 -t ducquoc/cl-up-to:1.1
+$ docker run -p 9980:80 -i -t ducquoc/cl-up-to:1.1
 ```
+Higher versions (1.2, 1.3, etc...): https://hub.docker.com/r/ducquoc/cl-up-to
 
 ## References 
 
-+ For a tailored version (Spring/SpringBoot) prime number up to, it's in:
++ For a bespoke variant (Spring/SpringBoot) prime number up to, it's in:
 https://bitbucket.org/ducquoc/dq-training
 
 + To count the lines of code, you can run 

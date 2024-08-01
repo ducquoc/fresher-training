@@ -2,6 +2,8 @@ package vn.ducquoc.upto.cl.helper;
 
 public class CliHelper {
 
+  public static int MAX_LENGTH_INPUT = 18;
+
   public static String banner() {
     return "             ,-----.,--.    ,--. ,--.        ,--------.      \n" +
             "            '  .--./|  |    |  | |  | ,---.  '--.  .--',---. \n" +
@@ -30,10 +32,10 @@ public class CliHelper {
 
   public static String help() {
     return "== Command-line tool helps find largest prime number up to input number." + System.lineSeparator() +
-            "=== Example: primeNumberUpTo(48)=47, primeNumberUpTo(23)=23, primeNumberUpTo(10)=7";
+            "=== Example: pNumUpTo(70)=67, pNumUpTo(105)=103, pNumUpTo(127)=127, pNumUpTo(140)=139";
   }
 
   public static String solicitInput() {
-    return "Please input integer (max length 18): ";
+    return "Please input integer (max length " + MAX_LENGTH_INPUT + "): ";
   }
 }
